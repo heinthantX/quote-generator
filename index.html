@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUOTE GENERATOR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-screen bg-gray-800">
+      <div
+        class="w-11/12 md:w-4/5 lg:w-3/5 xl:w-1/2 p-6 bg-gray-700 border border-white rounded-2xl md:text-center"
+      >
+        <div class="flex flex-col">
+          <svg
+            class="rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            width="48"
+            fill="white"
+          >
+            <path
+              d="M29 23h8v-8h-8Zm-18 0h8v-8h-8Zm20.3 11 4-8H26V12h14v14.4L36.2 34Zm-18 0 4-8H8V12h14v14.4L18.2 34ZM15 19Zm18 0Z"
+            />
+          </svg>
+          <h2 class="text-xl md:text-4xl text-white mx-5" id="quote-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            minus
+          </h2>
+          <svg
+            class="self-end"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            width="48"
+            fill="white"
+          >
+            <path
+              d="M29 23h8v-8h-8Zm-18 0h8v-8h-8Zm20.3 11 4-8H26V12h14v14.4L36.2 34Zm-18 0 4-8H8V12h14v14.4L18.2 34ZM15 19Zm18 0Z"
+            />
+          </svg>
+        </div>
+
+        <p
+          class="text-white md:text-xl italic text-center mb-6"
+          id="quote-author"
+        >
+          heill oweor eww <br />
+          <span id="author-profession">(oadfsd)</span>
+        </p>
+        <div class="flex justify-between w-full">
+          <span id="quote-topic" class="text-white ml-5 mt-3">#lods#ls</span>
+          <span class="mr-5" id="share"
+            ><svg
+              fill="grey"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              width="48"
+            >
+              <path
+                d="M36.35 44q-2.35 0-4.025-1.675Q30.65 40.65 30.65 38.3q0-.35.075-.825t.225-.875L15.8 27.8q-.75.85-1.85 1.375t-2.25.525q-2.35 0-4.025-1.675Q6 26.35 6 24q0-2.4 1.675-4.05T11.7 18.3q1.15 0 2.2.45 1.05.45 1.9 1.3l15.15-8.7q-.15-.35-.225-.8-.075-.45-.075-.85 0-2.4 1.675-4.05T36.35 4q2.4 0 4.05 1.65t1.65 4.05q0 2.35-1.65 4.025-1.65 1.675-4.05 1.675-1.15 0-2.225-.375Q33.05 14.65 32.3 13.8l-15.15 8.4q.1.4.175.925.075.525.075.875t-.075.75q-.075.4-.175.8l15.15 8.6q.75-.7 1.75-1.125 1-.425 2.3-.425 2.4 0 4.05 1.65t1.65 4.05q0 2.35-1.65 4.025Q38.75 44 36.35 44Zm0-31.6q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q37.5 7 36.35 7t-1.925.775q-.775.775-.775 1.925t.775 1.925q.775.775 1.925.775ZM11.7 26.7q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q12.85 21.3 11.7 21.3t-1.925.775Q9 22.85 9 24t.775 1.925q.775.775 1.925.775ZM36.35 41q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q37.5 35.6 36.35 35.6t-1.925.775q-.775.775-.775 1.925t.775 1.925Q35.2 41 36.35 41Zm0-31.3ZM11.7 24Zm24.65 14.3Z"
+              /></svg
+          ></span>
+        </div>
+      </div>
+      <button
+        id="new-quote-btn"
+        class="py-2.5 px-5 mt-8 text-lg flex items-center bg-gray-800 text-gray-400 rounded-lg border border-gray-600 hover:text-white hover:bg-gray-700"
+      >
+        NEW QUOTE<svg
+          fill="gray"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          width="48"
+        >
+          <path
+            d="M9.8 31.45q-1-1.8-1.4-3.625Q8 26 8 24.1q0-6.55 4.725-11.275Q17.45 8.1 24 8.1h2.15l-4-4 1.95-1.95 7.45 7.45-7.45 7.45-2-2 3.95-3.95H24q-5.35 0-9.175 3.825Q11 18.75 11 24.1q0 1.45.275 2.75t.675 2.45ZM23.8 46l-7.45-7.45 7.45-7.45 1.95 1.95-4 4H24q5.35 0 9.175-3.825Q37 29.4 37 24.05q0-1.45-.25-2.75T36 18.85l2.15-2.15q1 1.8 1.425 3.625Q40 22.15 40 24.05q0 6.55-4.725 11.275Q30.55 40.05 24 40.05h-2.25l4 4Z"
+          />
+        </svg>
+      </button>
+    </div>
+    <script src="./index.js" async type="module"></script>
+  </body>
+</html>
